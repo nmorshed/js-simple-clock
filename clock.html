@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clock Test</title>
+</head>
+<body>
+
+	<div id="clock"></div>
+
+
+
+	<script type="text/javascript">
+
+		// get the id
+		var clock = document.getElementById('clock');
+
+		// Rewrite the clock in each second
+		// setinterval is a javascript function
+		// Date is a class that provide us all Date functionality
+		// innerHtml place something inside of a html element.
+		
+		setInterval( () => {
+			clock.innerHTML = (new Date().toLocaleTimeString());
+		}, 1000 );
+		
+		
+	</script>
+
+</body>
+</html>
